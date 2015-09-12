@@ -1,0 +1,13 @@
+#!/bin/bash
+cd java/
+echo "In the Java directory"
+echo "Compiling Main.java ........"
+javac Main.java
+echo "Compiled Successfully. No errors found"
+echo "Running Main. Generating stats files"
+java Main
+echo "Generating graphs for FRR vs Far"
+gnuplot FRRvsFAR.gpl
+echo "Generating graphs for Histogram"
+gnuplot Hist.gpl
+echo "All files generated"

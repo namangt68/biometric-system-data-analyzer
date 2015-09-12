@@ -1,0 +1,26 @@
+set term postscript eps enhanced color  "Helvetica" 32
+
+set terminal png
+
+set output "Hist.png"
+
+set autoscale
+
+set format x "10^{%L}"
+set grid 
+set title "Genuine Score vs Imposter Score Frequency Histogram"
+set key left top
+
+
+set xlabel "Score(%)"
+
+set ylabel "Frequency(%)"
+
+
+set logscale x
+
+
+
+plot [700000:1000000][0.0015:0.01] "G_Hist.dat" u 1:2 w lp ti "Genuine", \
+     "I_Hist.dat" u 1:2 w lp ti "Imposter"
+

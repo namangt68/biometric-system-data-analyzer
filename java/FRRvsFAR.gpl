@@ -1,0 +1,22 @@
+set term postscript eps enhanced color  "Helvetica" 32
+
+set autoscale
+
+set key left top
+
+set xtics 1
+
+set ytics 1
+
+set title "FAR vs FRR"
+
+set xlabel "FRR(%)"
+
+set ylabel "FAR(%)"
+
+set term png
+
+set output "FRRvsFAR.png"
+
+plot [0:10][0:10] "FRR_FAR.dat" u 3:6 w lp ti "data"
+
