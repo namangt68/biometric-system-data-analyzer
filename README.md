@@ -15,7 +15,7 @@ Each row corresponds to a single matching characterized by six tuples :
 6. Dissimilarity Score, The dissimilarity score obtained when test is matched with gallery image.
 
 #####How to Run
-*Execute the main file directly or through shell*
+**Execute the main file directly or through shell.**
 The perfomance parameters with stats of a Biometric System Analyzer are calculated .
 
 This repository contains the code for the first asssignment of the CS 307 course. By the team of Abhishek Pandey, Swapnil Sharma and Naman Gupta.
